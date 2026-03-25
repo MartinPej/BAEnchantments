@@ -1,0 +1,123 @@
+#
+#    BAPickaxeEnhancements
+#    Support: Custom ordered. Contact Brody
+#
+####################################################
+# Set to the name of the file without the extension.
+# If you translate the entire document please send it to me, so I can add it for others to use easier.
+Lang: lang_en
+Options:
+  EnabledWorlds:
+    - world
+  EnabledTools:
+    - DIAMOND_PICKAXE
+EnhancementUI:
+  Title: '&#ff0000Enhancement&ds'
+  # Colour and formats found here. https://www.spigotmc.org/wiki/textcosmetics-colors-and-formats/
+  # {enhancement} - Will be replaced with the name of the enhancement
+  # {level} - Will be replaced with the level of the enhancement
+  Unlocked:
+    Sound:
+      # Sound options can be found here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      # This sound will play when returning a skill
+      Sound: BLOCK_AMETHYST_BLOCK_HIT
+      Volume: 0.5
+      Pitch: 1
+    Material: GREEN_STAINED_GLASS_PANE
+    Amount: 1
+    Name: '&f{enhancement} Level {level}'
+    Lore:
+      - '&aUnlocked'
+  Locked:
+    Sound:
+      # Sound options can be found here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      # This sound will play when purchasing a skill
+      Sound: BLOCK_AMETHYST_BLOCK_HIT
+      Volume: 0.5
+      Pitch: 1
+    Material: RED_STAINED_GLASS_PANE
+    Amount: 1
+    Name: '&f{enhancement} Level {level} '
+    Lore:
+      - '&cLocked'
+      - 'Click to unlock.'
+      - 'Costs 1 skill point'
+      - '{rate}% chance to activate'
+  UseFiller: false
+  FillerItem:
+    Material: WHITE_STAINED_GLASS_PANE
+    Amount: 1
+    Name: ''
+    Lore:
+      - ''
+  InfoItem:
+    Sound:
+      # Sound options can be found here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Sound: ENTITY_GENERIC_EXPLODE
+      Volume: 0.9
+      Pitch: 0.9
+    Material: PAPER
+    Amount: 1
+    # {points} - Will be replaced with the players current skill points
+    Name: '{points} skill point(s) available'
+    Lore:
+      - 'Spend them wisely!'
+  PrimaryEnhancementItem:
+    Material: STONE_BUTTON
+    Amount: 1
+    # {primary_enhancement} - Will be replaced with the players current primary enhancement
+    Name: 'Primary Enhancement: {primary_enhancement}'
+    Lore:
+      - ''
+Enhancements:
+  Explosion:
+    # Particle options can be found here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Particle.html
+    Particle: EXPLOSION_NORMAL
+    Sound:
+      # Sound options can be found here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Sound: ENTITY_GENERIC_EXPLODE
+      Volume: 0.9
+      Pitch: 0.9
+    Levels:
+      One:
+        Rate: 0.02
+        Range: 5
+      Two:
+        Rate: 0.04
+        Range: 5
+      Three:
+        Rate: 0.05
+        Range: 5
+  Disk:
+    Particle: EXPLOSION_NORMAL
+    Sound:
+      Sound: ENTITY_GENERIC_EXPLODE
+      Volume: 2
+      Pitch: 1
+    Levels:
+      One:
+        Rate: 0.02
+        Range: 2
+      Two:
+        Rate: 0.04
+        Range: 3
+      Three:
+        Rate: 0.05
+        Range: 5
+  Laser:
+    Particle: EXPLOSION_NORMAL
+    Sound:
+      Sound: ENTITY_GENERIC_EXPLODE
+      Volume: 2
+      Pitch: 1
+    Levels:
+      One:
+        Rate: 0.02
+        Range: 2
+      Two:
+        Rate: 0.04
+        Range: 4
+      Three:
+        Rate: 0.05
+        Range: 6
+Debug: false

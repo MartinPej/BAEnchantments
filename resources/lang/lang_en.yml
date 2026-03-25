@@ -1,0 +1,34 @@
+# {prefix} - Will be replaced by the plugins prefix and is a global placeholder
+Messages:
+  # Prefix of messages when plugin responds to commands
+  Prefix: '&7[&6BAPickaxeEnhancements&7]'
+  Global:
+    # {command} - Will be replaced by the command format
+    Insufficient_Permission: '{prefix} &4Insufficient Permission! &fYou don''t have access to {command}.'
+  Reload: '{prefix} &7Config reloaded.'
+  Level:
+    # {enhancement} - The enhancement the command is triggered for
+    # {level} - The level of the enhancement
+    Level: '{prefix} {enhancement}''s level is {level}.'
+    # {receiver} - The player the command is triggered for
+    Set: '{prefix} &f{receiver}''s {enhancement} has been set to {level}.'
+  Points:
+    # {points} - The returned/given value for points
+    Points: '{prefix} &fYou have &a{points} &fpoint(s).'
+    # {receiver} - The person the command is triggered on
+    Add: '{prefix} &a{points} &fpoint(s) added to {receiver}.'
+    AddPlayerMessage: '{prefix} &a{points} &fpoint(s) added to your account!'
+    Remove: '{prefix} &a{points} &fpoint(s) removed from {receiver}.'
+    Set: '{prefix} {receiver}''s skill points set to {points}.'
+  Help:
+    # {version} - Will be replaced by the plugins version
+    - '&7-------------[ &6BAPickaxeEnhancement V{version} Help &7]-------------'
+    - '&6/6BAPickaxeEnhancement &8: &7Opens the UI for managing your enhancements.'
+    - '&6/6BAPickaxeEnhancement help &8: &7Displays help message.'
+    - '&6/6BAPickaxeEnhancement reload &8: &7Reloads the config files.'
+    - '&6/6BAPickaxeEnhancement points &8: &7Displays your current skill points.'
+    - '&6/6BAPickaxeEnhancement points add <player_ign> <amount> &8: &7Add''s skill points to a player.'
+    - '&6/6BAPickaxeEnhancement points remove <player_ign> <amount> &8: &7Removes''s skill points from a player.'
+    - '&6/6BAPickaxeEnhancement points set <player_ign> <amount> &8: &7Sets''s a players skill points.'
+    - '&6/6BAPickaxeEnhancement level <enhancement> &8: &7Returns the current level of the specified enhancement.'
+    - '&6/6BAPickaxeEnhancement level set <player_ign> <enhancement> <level> &8: &7Sets the current level of the specified enhancement for a player.'

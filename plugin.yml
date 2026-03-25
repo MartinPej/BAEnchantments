@@ -1,0 +1,51 @@
+name: BAPickaxeEnhancement
+version: 1.0
+description: This plugin is used to add custom enhancements to trigger with diamond pickaxes.
+main: main.java.ba.pickaxe_enhancements.Main
+author: Brody A.
+api-version: 1.19
+commands:
+  BAPickaxeEnhancements:
+    aliases: [bape, PickaxeEnhancements, pe, enhancements]
+permissions:
+  'BAPickaxeEnhancements.enhancements':
+    description: Be allowed access to spend skill points on enhancements.
+    default: op
+  'BAPickaxeEnhancements.help':
+    description: Send a help message.
+    default: op
+  'BAPickaxeEnhancements.reload':
+    description: Reload plugin config.
+    default: op
+  'BAPickaxeEnhancements.level':
+    description: View the current level of specified enhancement.
+    default: op
+  'BAPickaxeEnhancements.level.set':
+    description: Set the level of an enhancement for a player.
+    default: op
+  'BAPickaxeEnhancements.level.*':
+    description: Set the level of an enhancement for a player and view the current level of your enhancements.
+    default: op
+    children:
+      'BAPickaxeEnhancements.level': true
+      'BAPickaxeEnhancements.level.set': true
+  'BAPickaxeEnhancements.points.add':
+    description: Add skill points to players.
+    default: op
+  'BAPickaxeEnhancements.points.remove':
+    description: Remove skill points to players.
+    default: op
+  'BAPickaxeEnhancements.points.set':
+    description: Set skill points to players.
+    default: op
+  'BAPickaxeEnhancements.points':
+    description: View your current skill points.
+    default: op
+  'BAPickaxeEnhancements.points.*':
+    description: Add, remove, and set skill points for players.
+    default: op
+    children:
+      'BAPickaxeEnhancements.points': true
+      'BAPickaxeEnhancements.points.add': true
+      'BAPickaxeEnhancements.points.remove': true
+      'BAPickaxeEnhancements.points.set': true
